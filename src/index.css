@@ -1,10 +1,16 @@
 @import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
 @import url("https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 
 .cursive {
-  font-family: "Acme", cursive;
-  font-weight: 700;
+  font-family: 'Playball', cursive;
+  font-weight: 500;
+}
+
+.sans {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
 }
 
 .prose img {
@@ -14,5 +20,18 @@
 }
 
 .home-name {
-  font-size: 150px;
+  font-size: 120px;
 }
+
+.navbar-color {
+  background-color: #D8C599;
+}
+
+.navbar {
+  display: flex;
+}
+
+/* .active-navbar {
+  color: green;
+  background-color: white;
+} */
