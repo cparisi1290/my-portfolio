@@ -23,15 +23,22 @@
   font-size: 120px;
 }
 
+.home-title {
+  font-size: 50px;
+}
+
 .navbar-color {
-  background-color: #D8C599;
+  background-color: #D4C5A6;
 }
 
 .navbar {
   display: flex;
 }
 
-/* .active-navbar {
-  color: green;
-  background-color: white;
-} */
+.featured-posts {
+  color: #564147;
+}
+
+.featured-posts-sub {
+  color: #BDA5AB;
+}
