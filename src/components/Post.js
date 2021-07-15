@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import sanityClient from '../client';
 import image from '../blurred.jpg'
+import flower from '../pink-flower.jpg'
+
 
 export default function Post() {
   const [postData, setPost] = useState(null);
@@ -27,7 +29,7 @@ export default function Post() {
 
   return (
     <main className='bg-scroll bg-contain overflow-auto w-cover h-cover'>
-        <img src={image} alt='clouded tan background' className='absolute object-cover w-cover h-cover'/>
+        <img src={flower} alt='clouded tan background' className='absolute object-cover w-cover h-cover'/>
         <section className='container mx-auto absolute justify-center min-h-screen pt-5 lg:pt-8 px-8'>
             <h1 className='text-5xl flex justify-center cursive featured-posts'>
                 Featured Blog Posts
@@ -46,12 +48,12 @@ export default function Post() {
                         >
                         {post.mainImage && post.mainImage.asset && (
                         <img
-                            src={ post.mainImage.asset.url}
+                            src={post.mainImage.asset.url}
                             alt={post.mainImage.alt}
                             className='w-full h-full rounded-r object-cover absolute'
                         />)}
                             <span className='block relative h-full flex justify-end items-end pr-4 pb-4'>
-                                <h3 className='text-gray-800 text-lg sans px-3 py-4 bg-green-700 text-green-100 bg-opacity-75 rounded'>
+                                <h3 className='text-gray-800 text-lg sans px-3 py-4 bg-green-800 text-green-100 bg-opacity-75 rounded'>
                                 {post.title}
                                 </h3>
                             </span>
