@@ -42,3 +42,7 @@
 .featured-posts-sub {
   color: #BDA5AB;
 }
+
+.project-image {
+  background-image: url('pink-flower.jpg');
+}
