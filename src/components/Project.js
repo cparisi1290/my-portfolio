@@ -25,7 +25,7 @@ export default function Project() {
     
     return (
         <main className='bg-contain'>
-        <img src={image} alt='clouded tan background' className='absolute object-cover w-cover h-cover'/>
+        <img src={flower} alt='clouded tan background' className='absolute object-cover w-cover h-cover'/>
             <section className='container mx-auto absolute justify-center min-h-screen pt-5 lg:pt-8 px-8'>
                 <h1 className='text-5xl flex justify-center cursive featured-posts'>My Projects</h1>
                 <h2 className='text-lg flex justify-center mb-12 featured-posts-sub'>Welcome to my projects page!</h2>
