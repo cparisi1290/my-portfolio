@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import sanityClient from '../client';
-import flower from '../pink-flowerog.jpg'
+import flower from '../pink-flower.jpg'
 
 export default function Project() {
     const [projectData, setProjectData] = useState(null);
