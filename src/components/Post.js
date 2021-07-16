@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import sanityClient from '../client';
-import flower from '../pink-flowerog.jpg'
+import flower from '../PinkFlower.jpg'
 
 
 export default function Post() {
