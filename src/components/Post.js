@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import sanityClient from '../client';
-import image from '../blurred.jpg'
-import flower from '../pink-flower.jpg'
+import flower from '../pink-flowerog.jpg'
 
 
 export default function Post() {
@@ -28,13 +27,13 @@ export default function Post() {
   }, []);
 
   return (
-    <main className='bg-scroll bg-contain overflow-auto w-cover h-cover'>
+    <main className='bg-container'>
         <img src={flower} alt='clouded tan background' className='absolute object-cover w-cover h-cover'/>
-        <section className='container mx-auto absolute justify-center min-h-screen pt-5 lg:pt-8 px-8'>
+        <section className='container mx-auto relative justify-center min-h-screen pt-5 lg:pt-16 px-10'>
             <h1 className='text-5xl flex justify-center cursive featured-posts'>
                 Featured Blog Posts
             </h1>
-            <h2 className='text-lg flex justify-center mb-12 featured-posts-sub'>
+            <h2 className='text-lg flex justify-center mb-24 featured-posts-sub'>
                 Welcome to my page of blog posts
             </h2>
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-12'>
