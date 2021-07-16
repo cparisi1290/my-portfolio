@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import sanityClient from '../client';
 import imageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react'
-import flower from '../pink-flowerog.jpg';
+import flower from '../PinkFlower.jpg';
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -30,9 +30,9 @@ export default function About() {
     return (
         <main className='relative'>
             <img src={flower} alt='pink flower on branch' className='absolute object-cover w-cover h-cover'/>
-            <div className='p-10 lg:pt-32 container mx-auto relative'>
-                <section className='bg-muave rounded-lg lg:flex p-16' >
-                    <img src={urlFor(author.authorImage).url()} className='rounded w-auto h-32 lg:w-auto lg:h-64 mr-8' alt={author.name}/>
+            <div className='p-10 lg:pt-24 container mx-auto relative'>
+                <section className='bg-muave shadow-2xl rounded-lg lg:flex p-16' >
+                    <img src={urlFor(author.authorImage).url()} className='rounded w-auto h-32 lg:w-auto lg:h-64 lg:pt-6 mr-8' alt={author.name}/>
                     <div className='text-lg flex flex-col justify-center'>
                         <h1 className='cursive text-6xl featured-posts'>Hi there! I'm {author.name}.
                         </h1>
