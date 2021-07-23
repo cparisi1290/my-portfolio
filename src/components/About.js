@@ -31,7 +31,7 @@ export default function About() {
         <main className='relative'>
             <img src={flower} alt='pink flower on branch' className='absolute object-cover w-cover h-cover'/>
             <div className='p-10 lg:pt-24 container mx-auto relative'>
-                <section className='bg-muave shadow-2xl rounded-lg lg:flex p-16' >
+                <section className='rounded-lg lg:flex p-10' >
                     <img src={urlFor(author.authorImage).url()} className='rounded w-auto h-32 lg:w-auto lg:h-64 lg:pt-6 mr-8' alt={author.name}/>
                     <div className='text-lg flex flex-col justify-center'>
                         <h1 className='cursive text-6xl featured-posts'>Hi there! I'm {author.name}.
